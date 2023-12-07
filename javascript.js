@@ -84,11 +84,13 @@ function createTableHeader(table) {
 function appendTableToContainer(table) {
   // Grab the root element
   const root = document.querySelector("#root");
+  // reset table to default
+  root.innerHTML = "";
   // Create a heading
   const h1 = document.createElement("h1");
   h1.innerText = "Freelancers Forum";
   const p = document.createElement("p");
-  p.innerText = `The average starting price is ${averageStartingPrice}.`;
+  p.innerText = `The average starting price is $${averageStartingPrice}.`;
   const h2 = document.createElement("h2");
   h2.innerText = "Available Freelancers";
   // Add it to the Root.
